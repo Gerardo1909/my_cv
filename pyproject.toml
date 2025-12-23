@@ -1,0 +1,9 @@
+[project]
+name = "my-cv"
+version = "0.1.0"
+description = "Here I edit my personal CV."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "rendercv[full]>=2.5",
+]
