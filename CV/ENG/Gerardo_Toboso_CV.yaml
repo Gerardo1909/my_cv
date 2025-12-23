@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+cv:
+  name: Gerardo Toboso
+  headline: Data & Analytics Specialist
+  location: Buenos Aires, Argentina
+  email: gerardotoboso1909@gmail.com
+  phone: (+54) 9 11-4045-6207
+  social_networks:
+    - network: LinkedIn
+      username: gerardo-toboso-512a48290
+    - network: GitHub
+      username: Gerardo1909
+
+  sections:
+    summary:
+      - Data & Analytics Specialist with hands-on experience designing automated data pipelines, curating analytics-ready datasets, and translating raw data into actionable business insights. Strong background in Python and SQL, with experience supporting BI environments, defining metrics, and building dashboards for decision-making. Passionate about documentation, data quality, and clear communication with both technical and non-technical stakeholders. Currently pursuing a BSc in Data Science and seeking to grow within a mission-driven, collaborative analytics team.
+
+    skills:
+      - label: Analytics & BI
+        details: SQL (PostgreSQL), Data Modeling (Star Schemas), Metrics Definition, Exploratory Analysis, Business Insights, Data Validation
+      - label: Data Visualization
+        details: Power BI (DAX), Tableau, Reporting & Stakeholder Dashboards
+      - label: Data Engineering
+        details: Python (pandas, numpy), ETL Pipelines, Data Cleaning, Parquet, Logging & Monitoring
+      - label: Platforms & Tools
+        details: MongoDB Atlas, Supabase, Git & GitHub, GitHub Actions (CI/CD), Docker, Linux, Jupyter
+      - label: Additional
+        details: Pytest, Pydantic, Scikit-learn, Advanced Excel (Pivot Tables)
+      - label: Languages
+        details: Spanish (Native) | English (Fluent - C2)
+
+    experience:
+      - company: NovaMart – E-commerce Reporting ETL (Personal Project)
+        position: Data Engineer
+        location: '[GitHub](https://github.com/Gerardo1909/ecommerce-reporting-etl)'
+        start_date: 2025-11
+        end_date: present
+        highlights:
+          - Designed and implemented an automated analytics pipeline for an e-commerce dataset (10+ related tables), reducing manual reporting time from 2 hours to under 3 minutes.
+          - Built an end-to-end ETL pipeline in Python to extract, clean, and transform transactional data into analytics-ready tables.
+          - Defined and calculated core business metrics (top customers, best-selling products, monthly trends) to support data-driven decision-making.
+          - Identified and resolved data quality issues, handling ~15% missing values and removing ~3% duplicate records.
+          - Optimized data storage by migrating outputs from CSV to Parquet, reducing file size by 8x.
+
+      - company: MIT LIFT Lab & Argentina Collaborative Project 2025
+        position: Research Collaborator
+        location: '[GitHub](https://github.com/Gerardo1909/mit_lift_lab_analisis_adelift)'
+        start_date: 2025-09
+        end_date: 2025-12
+        highlights:
+          - Collected and analyzed survey data from small businesses in local communities in Argentina.
+          - Cleaned and processed datasets using Python, applying NLP techniques, geographic segmentation, and statistical analysis.
+          - Identified 4 geographic-based digital adoption patterns and 2 seasonality trends directly impacting sales performance.
+          - Prepared analytical reports in English for MIT audiences, contributing to recommendations that highlighted potential sales improvements of up to 18%.
+
+    education:
+      - institution: Universidad Nacional de San Martín (UNSAM)
+        area: Data Science
+        degree: BSc
+        location: Buenos Aires, Argentina
+        start_date: 2022-07
+        end_date: present
+        highlights:
+          - '75% completed — GPA: 9.0 / 10'
+
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.5in
+    right_margin: 0.5in
+    show_footer: false
+    show_top_note: false
+
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+
+locale:
+  language: english
