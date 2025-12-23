@@ -8,6 +8,13 @@ This repository contains my professional CV, managed as **code** using [RenderCV
 
 No more wrestling with Word formatting. No more "which version did I send?". Just clean, version-controlled, reproducible documents.
 
+## Download CV
+
+| Language | PDF |
+|----------|-----|
+| 🇺🇸 English | [View PDF](CV/ENG/rendercv_output/Gerardo_Toboso_CV.pdf) |
+| 🇪🇸 Spanish | [View PDF](CV/ES/rendercv_output/Gerardo_Toboso_CV.pdf) |
+
 ## Why Code Your CV?
 
 | Traditional CV | This Approach |
