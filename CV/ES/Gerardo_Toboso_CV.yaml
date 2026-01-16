@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
 cv:
   name: Gerardo Toboso
-  headline: Especialista en Datos y Analítica
+  headline: Ingeniero de Datos
   location: Buenos Aires, Argentina
   email: gerardotoboso1909@gmail.com
-  phone: (+54) 9 11-4045-6207
+  phone: (+54) 911-4045-6207
   social_networks:
     - network: LinkedIn
       username: gerardo-toboso-512a48290
@@ -13,45 +13,44 @@ cv:
 
   sections:
     resumen:
-      - Especialista en Datos y Analítica con experiencia práctica en el diseño de pipelines de datos automatizados, curación de datasets listos para análisis, y transformación de datos crudos en insights accionables para el negocio. Sólida formación en Python y SQL, con experiencia en soporte de entornos de BI, definición de métricas y construcción de dashboards para la toma de decisiones. Apasionado por la documentación, la calidad de datos y la comunicación clara con stakeholders técnicos y no técnicos. Actualmente cursando la Licenciatura en Ciencia de Datos y buscando crecer en un equipo de analítica colaborativo y orientado a la misión.
+      - Ingeniero de Datos con experiencia en el diseño y automatización de pipelines robustos para entornos de datos complejos. He desarrollado proyectos propios end-to-end, desde la orquestación y monitoreo de flujos complejos de datos hasta la integración y análisis de datos transaccionales para responder preguntas de negocio. Me especializo en transformar grandes volúmenes de datos en modelos analíticos listos para tomar decisiones críticas, priorizando la calidad, trazabilidad y eficiencia operativa. Apasionado por la documentación, la mejora continua y la entrega de soluciones confiables para equipos de producto y analítica. Actualmente cursando la Licenciatura en Ciencia de Datos (UNSAM, Buenos Aires) y buscando aportar en equipos de ingeniería de datos innovadores y colaborativos.
 
     habilidades:
-      - label: Analítica & BI
-        details: SQL (PostgreSQL), Modelado de Datos (Star Schemas), Definición de Métricas, Análisis Exploratorio, Insights de Negocio, Validación de Datos
-      - label: Visualización de Datos
-        details: Power BI (DAX), Tableau, Reportes y Dashboards para Stakeholders
-      - label: Ingeniería de Datos
-        details: Python (pandas, numpy), Pipelines ETL, Limpieza de Datos, Parquet, Logging y Monitoreo
-      - label: Plataformas y Herramientas
-        details: MongoDB Atlas, Supabase, Git & GitHub, GitHub Actions (CI/CD), Docker, Linux, Jupyter
-      - label: Adicional
-        details: Pytest, Pydantic, Scikit-learn, Excel Avanzado (Tablas Dinámicas)
+      - label: Orquestación y Pipelines
+        details: Apache Airflow (DAGs, monitoreo, alertas, reintentos), uso de operadores (DockerOperator, BashOperator, etc.), Scheduling (Cron) y versionado de datos
+      - label: Procesamiento y Modelado de Datos
+        details: PySpark, Python (pandas, numpy, duckdb), Modelado dimensional (Star Schema - OLAP), Manejo de formato Parquet para particionamiento eficiente y reducción de tamaño
+      - label: Cloud & Data Lake
+        details: AWS S3 (data lake), Docker, CI/CD (GitHub Actions), despliegue reproducible, seguridad y control de accesos
+      - label: Monitoreo y Calidad
+        details: Logging estructurado, alertas automáticas, testing de pipelines (Pytest), control de calidad (Great Expectations) y trazabilidad de datos
+      - label: SQL & BI
+        details: SQL (PostgreSQL), Generación de Dashboards (Looker Studio) y analítica avanzada orientada a producto
       - label: Idiomas
         details: Español (Nativo) | Inglés (Fluido - C2)
 
     experiencia:
-      - company: NovaMart – ETL de Reportes E-commerce (Proyecto Personal)
+      - company: ETL de Reportes E-commerce (Proyecto Personal)
         position: Ingeniero de Datos
         location: '[GitHub](https://github.com/Gerardo1909/ecommerce-reporting-etl)'
         start_date: 2025-11
-        end_date: present
+        end_date: 2025-12
         highlights:
-          - Diseñé e implementé un pipeline de analítica automatizado para un dataset de e-commerce (10+ tablas relacionadas), reduciendo el tiempo de reportes manuales de 2 horas a menos de 3 minutos.
-          - Construí un pipeline ETL de extremo a extremo en Python para extraer, limpiar y transformar datos transaccionales en tablas listas para análisis.
+          - Diseñé e implementé un pipeline ETL end-to-end en Python para un dataset de e-commerce (10+ tablas relacionadas), reduciendo el tiempo de reportes manuales de 2 horas a menos de 3 minutos.
           - Definí y calculé métricas de negocio clave (mejores clientes, productos más vendidos, tendencias mensuales) para soportar la toma de decisiones basada en datos.
           - Identifiqué y resolví problemas de calidad de datos, manejando ~15% de valores faltantes y eliminando ~3% de registros duplicados.
           - Optimicé el almacenamiento de datos migrando outputs de CSV a Parquet, reduciendo el tamaño de archivos en 8x.
 
-      - company: MIT LIFT Lab & Proyecto Colaborativo Argentina 2025
-        position: Colaborador de Investigación
-        location: '[GitHub](https://github.com/Gerardo1909/mit_lift_lab_analisis_adelift)'
-        start_date: 2025-09
-        end_date: 2025-12
+      - company: ETL para datos IoT (Proyecto Personal)
+        position: Ingeniero de Datos
+        location: '[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)'
+        start_date: 2025-12
+        end_date: present
         highlights:
-          - Recolecté y analicé datos de encuestas de pequeños negocios en comunidades locales de Argentina.
-          - Limpié y procesé datasets usando Python, aplicando técnicas de NLP, segmentación geográfica y análisis estadístico.
-          - Identifiqué 4 patrones de adopción digital basados en geografía y 2 tendencias estacionales que impactan directamente el rendimiento de ventas.
-          - Preparé reportes analíticos en inglés para audiencias del MIT, contribuyendo a recomendaciones que destacaron mejoras potenciales en ventas de hasta 18%.
+          - Diseñé e implementé un pipeline ETL orquestado con Airflow para procesar millones de lecturas IoT industriales diariamente provenientes de una API externa, logrando 99.9% de uptime y detección de fallas en menos de 5 minutos.
+          - Implementé la etapa de transformación en PySpark, logrando procesar 50GB/minuto sin problemas de memoria.
+          - Implementé particionamiento y versionado de datos en Parquet, optimizando queries y reduciendo costos de almacenamiento.
+          - Diseñé esquema de almacenamiento en AWS S3 (data lake), asegurando potencial escalabilidad ante un mayor volumen de datos (> 1TB diario).
 
     educación:
       - institution: Universidad Nacional de San Martín (UNSAM)
