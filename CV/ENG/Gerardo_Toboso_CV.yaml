@@ -1,10 +1,9 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
 cv:
   name: Gerardo Toboso
-  headline: Data & Analytics Specialist
+  headline: Data Engineer
   location: Buenos Aires, Argentina
   email: gerardotoboso1909@gmail.com
-  phone: (+54) 9 11-4045-6207
+  phone: (+54) 911-4045-6207
   social_networks:
     - network: LinkedIn
       username: gerardo-toboso-512a48290
@@ -13,45 +12,44 @@ cv:
 
   sections:
     summary:
-      - Data & Analytics Specialist with hands-on experience designing automated data pipelines, curating analytics-ready datasets, and translating raw data into actionable business insights. Strong background in Python and SQL, with experience supporting BI environments, defining metrics, and building dashboards for decision-making. Passionate about documentation, data quality, and clear communication with both technical and non-technical stakeholders. Currently pursuing a BSc in Data Science and seeking to grow within a mission-driven, collaborative analytics team.
+      - Data Engineer with experience designing and automating robust pipelines for complex data environments. I have developed end-to-end personal projects, from orchestration and monitoring of complex data flows to the integration and analysis of transactional data to answer business questions. I specialize in transforming large volumes of data into analytics-ready models for critical decision-making, prioritizing quality, traceability, and operational efficiency. Passionate about documentation, continuous improvement, and delivering reliable solutions for product and analytics teams. Currently pursuing a BSc in Data Science (UNSAM, Buenos Aires) and seeking to contribute to innovative and collaborative data engineering teams.
 
     skills:
-      - label: Analytics & BI
-        details: SQL (PostgreSQL), Data Modeling (Star Schemas), Metrics Definition, Exploratory Analysis, Business Insights, Data Validation
-      - label: Data Visualization
-        details: Power BI (DAX), Tableau, Reporting & Stakeholder Dashboards
-      - label: Data Engineering
-        details: Python (pandas, numpy), ETL Pipelines, Data Cleaning, Parquet, Logging & Monitoring
-      - label: Platforms & Tools
-        details: MongoDB Atlas, Supabase, Git & GitHub, GitHub Actions (CI/CD), Docker, Linux, Jupyter
-      - label: Additional
-        details: Pytest, Pydantic, Scikit-learn, Advanced Excel (Pivot Tables)
+      - label: Orchestration & Pipelines
+        details: Apache Airflow (DAGs, monitoring, alerts, retries), use of operators (DockerOperator, BashOperator, etc.), Scheduling (Cron), and data versioning
+      - label: Data Processing & Modeling
+        details: PySpark, Python (pandas, numpy, duckdb), Dimensional modeling (Star Schema - OLAP), Parquet format management for efficient partitioning and size reduction
+      - label: Cloud & Data Lake
+        details: AWS S3 (data lake), Docker, CI/CD (GitHub Actions), reproducible deployment, security and access control
+      - label: Monitoring & Quality
+        details: Structured logging, automated alerts, pipeline testing (Pytest), data quality control (Great Expectations), and data traceability
+      - label: SQL & BI
+        details: SQL (PostgreSQL), Dashboard generation (Looker Studio), and advanced analytics oriented to product
       - label: Languages
         details: Spanish (Native) | English (Fluent - C2)
 
     experience:
-      - company: NovaMart – E-commerce Reporting ETL (Personal Project)
+      - company: E-commerce Reporting ETL (Personal Project)
         position: Data Engineer
         location: '[GitHub](https://github.com/Gerardo1909/ecommerce-reporting-etl)'
         start_date: 2025-11
-        end_date: present
+        end_date: 2025-12
         highlights:
-          - Designed and implemented an automated analytics pipeline for an e-commerce dataset (10+ related tables), reducing manual reporting time from 2 hours to under 3 minutes.
-          - Built an end-to-end ETL pipeline in Python to extract, clean, and transform transactional data into analytics-ready tables.
-          - Defined and calculated core business metrics (top customers, best-selling products, monthly trends) to support data-driven decision-making.
+          - Designed and implemented an end-to-end ETL pipeline in Python for an e-commerce dataset (10+ related tables), reducing manual reporting time from 2 hours to under 3 minutes.
+          - Defined and calculated key business metrics (top customers, best-selling products, monthly trends) to support data-driven decision-making.
           - Identified and resolved data quality issues, handling ~15% missing values and removing ~3% duplicate records.
           - Optimized data storage by migrating outputs from CSV to Parquet, reducing file size by 8x.
 
-      - company: MIT LIFT Lab & Argentina Collaborative Project 2025
-        position: Research Collaborator
-        location: '[GitHub](https://github.com/Gerardo1909/mit_lift_lab_analisis_adelift)'
-        start_date: 2025-09
-        end_date: 2025-12
+      - company: IoT Data ETL (Personal Project)
+        position: Data Engineer
+        location: '[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)'
+        start_date: 2025-12
+        end_date: present
         highlights:
-          - Collected and analyzed survey data from small businesses in local communities in Argentina.
-          - Cleaned and processed datasets using Python, applying NLP techniques, geographic segmentation, and statistical analysis.
-          - Identified 4 geographic-based digital adoption patterns and 2 seasonality trends directly impacting sales performance.
-          - Prepared analytical reports in English for MIT audiences, contributing to recommendations that highlighted potential sales improvements of up to 18%.
+          - Designed and implemented an ETL pipeline orchestrated with Airflow to process millions of industrial IoT readings daily from an external API, achieving 99.9% uptime and failure detection in under 5 minutes.
+          - Implemented the transformation stage in PySpark, processing 50GB/minute without memory issues.
+          - Implemented data partitioning and versioning in Parquet, optimizing queries and reducing storage costs.
+          - Designed a storage schema in AWS S3 (data lake), ensuring potential scalability for higher data volumes (> 1TB daily).
 
     education:
       - institution: Universidad Nacional de San Martín (UNSAM)
@@ -73,6 +71,10 @@ design:
     right_margin: 0.5in
     show_footer: false
     show_top_note: false
+  templates:
+    education_entry:
+      main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
+      degree_column:
 
 settings:
   render_command:
@@ -82,3 +84,4 @@ settings:
 
 locale:
   language: english
+  present: present
