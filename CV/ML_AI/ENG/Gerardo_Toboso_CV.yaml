@@ -1,0 +1,87 @@
+cv:
+    name: Gerardo Toboso
+    headline: AI Backend Engineer | LLM Systems & Data Infrastructure
+    location: Buenos Aires, Argentina
+    email: gerardotoboso1909@gmail.com
+    phone: (+54) 911-4045-6207
+    social_networks:
+        - network: LinkedIn
+          username: gerardo-toboso-512a48290
+        - network: GitHub
+          username: Gerardo1909
+
+    sections:
+        summary:
+            - AI Backend Engineer specialized in designing and deploying production-ready LLM systems and scalable data infrastructures. Strong background in modular RAG architectures, LLM API integration, backend system design, and observability-aware engineering. Teaching Assistant in Bayesian Causal Inference with solid foundations in probabilistic modeling and uncertainty quantification. Focused on building robust, testable, and maintainable AI-driven backend services aligned with clean architecture principles.
+
+        skills:
+            - label: Backend & API Development
+              details: Python (advanced), FastAPI (API-ready architecture), RESTful design, Dependency Injection, and Clean Architecture principles
+            - label: LLM & AI Systems
+              details: RAG architectures, LLM API integration (Groq/OpenAI-compatible), Prompt engineering with contextual grounding, Vector databases (ChromaDB), Embedding pipelines (Sentence Transformers), and Similarity search and filtering strategies
+            - label: Data Infrastructure
+              details: SQL (DuckDB, analytics modeling), NoSQL concepts, PySpark, Airflow orchestration, dbt-core, and AWS S3
+            - label: DevOps & Testing
+              details: Docker & Docker Compose, Pytest with coverage, Structured project layout, and Environment configuration management
+            - label: ML Foundations
+              details: Bayesian inference, Probabilistic modeling, MCMC & hierarchical models, and Uncertainty quantification
+
+        experience:
+            - company: RAG Systems - Causalito AI Assistant (Personal Project)
+              position: AI Backend Engineer
+              location: "[GitHub](https://github.com/Gerardo1909/fintech-flow-dbt)"
+              start_date: 2025-12
+              end_date: 2026-02
+              highlights:
+                  - Designed and implemented a modular RAG-based backend system indexing academic PDFs and generating grounded responses via LLM APIs.
+                  - Architected full ingestion → indexing → retrieval → generation pipeline with strict separation of concerns.
+                  - Integrated external LLM APIs (Groq/OpenAI-compatible) with custom prompt orchestration to reduce hallucinations.
+                  - Implemented deterministic ID strategy for reproducible indexing and consistency.
+                  - Developed similarity search infrastructure using vector embeddings (Sentence Transformers + ChromaDB).
+                  - Built structured test suite (unit + integration) with ~70–80% coverage for critical modules.
+
+            - company: Bayes Plurinacional
+              position: Undergraduate Teaching Assistant
+              location: "[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)"
+              start_date: 2025-12
+              end_date: present
+              highlights:
+                  - Developed technical documentation and courseware on probabilistic modeling, MCMC, and hierarchical models.
+                  - Translated advanced Bayesian theory into applied workflows for uncertainty quantification.
+                  - Guided students in model comparison and credible interval interpretation.
+                  - Simplified complex probabilistic systems into actionable engineering concepts.
+
+        education:
+            - institution: Universidad Nacional de San Martín (UNSAM)
+              area: Data Science
+              degree: BSc
+              location: Buenos Aires, Argentina
+              start_date: 2022-07
+              end_date: present
+              highlights:
+                  - "75% completed — GPA: 9.0 / 10"
+
+design:
+    theme: engineeringresumes
+    page:
+        size: us-letter
+        top_margin: 0.5in
+        bottom_margin: 0.5in
+        left_margin: 0.5in
+        right_margin: 0.5in
+        show_footer: false
+        show_top_note: false
+    templates:
+        education_entry:
+            main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
+            degree_column:
+
+settings:
+    render_command:
+        dont_generate_markdown: true
+        dont_generate_html: true
+        dont_generate_png: true
+
+locale:
+    language: english
+    present: present
