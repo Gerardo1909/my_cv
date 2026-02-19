@@ -1,88 +1,91 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
 cv:
-  name: Gerardo Toboso
-  headline: Ingeniero de Datos
-  location: Buenos Aires, Argentina
-  email: gerardotoboso1909@gmail.com
-  phone: (+54) 911-4045-6207
-  social_networks:
-    - network: LinkedIn
-      username: gerardo-toboso-512a48290
-    - network: GitHub
-      username: Gerardo1909
+    name: Gerardo Toboso
+    headline: Ingeniero de Datos
+    location: Buenos Aires, Argentina
+    email: gerardotoboso1909@gmail.com
+    phone: (+54) 911-4045-6207
+    social_networks:
+        - network: LinkedIn
+          username: gerardo-toboso-512a48290
+        - network: GitHub
+          username: Gerardo1909
 
-  sections:
-    resumen:
-      - Ingeniero de Datos con experiencia en el diseño y automatización de pipelines robustos para entornos de datos complejos. He desarrollado proyectos propios end-to-end, desde la orquestación y monitoreo de flujos complejos de datos hasta la integración y análisis de datos transaccionales para responder preguntas de negocio. Me especializo en transformar grandes volúmenes de datos en modelos analíticos listos para tomar decisiones críticas, priorizando la calidad, trazabilidad y eficiencia operativa. Apasionado por la documentación, la mejora continua y la entrega de soluciones confiables para equipos de producto y analítica. Actualmente cursando la Licenciatura en Ciencia de Datos (UNSAM, Buenos Aires) y buscando aportar en equipos de ingeniería de datos innovadores y colaborativos.
+    sections:
+        resumen:
+            - Data Engineer especializado en el diseño de pipelines cloud-native sobre AWS, con enfoque en arquitecturas serverless, idempotencia y validación temprana de datos. Experiencia construyendo Data Lakes en Amazon S3, pipelines event-driven con AWS Lambda y almacenamiento particionado en Parquet optimizado para analítica. Fuerte orientación a calidad de datos, observabilidad (CloudWatch) y diseño costo-eficiente en entornos productivos.
 
-    habilidades:
-      - label: Orquestación y Pipelines
-        details: Apache Airflow (DAGs, monitoreo, alertas, reintentos), uso de operadores (DockerOperator, BashOperator, etc.), Scheduling (Cron) y versionado de datos
-      - label: Procesamiento y Modelado de Datos
-        details: PySpark, Python (pandas, numpy, duckdb), Modelado dimensional (Star Schema - OLAP), Manejo de formato Parquet para particionamiento eficiente y reducción de tamaño
-      - label: Cloud & Data Lake
-        details: AWS S3 (data lake), Docker, CI/CD (GitHub Actions), despliegue reproducible, seguridad y control de accesos
-      - label: Monitoreo y Calidad
-        details: Logging estructurado, alertas automáticas, testing de pipelines (Pytest), control de calidad (Great Expectations) y trazabilidad de datos
-      - label: SQL & BI
-        details: SQL (PostgreSQL), Generación de Dashboards (Looker Studio) y analítica avanzada orientada a producto
-      - label: Idiomas
-        details: Español (Nativo) | Inglés (Fluido - C2)
+        habilidades:
+            - label: Arquitectura de Datos & Diseño Cloud
+              details: Arquitecturas event-driven en AWS, Data Lakes en Amazon S3, diseño de pipelines idempotentes, particionamiento Hive-style (Parquet), modelado dimensional (Star Schema, SCD Type 2), Data Contracts y políticas de frescura (SLA de datos)
+            - label: Ingeniería de Datos & Procesamiento
+              details: Python (pandas, PySpark, duckdb), desarrollo de ETL/ELT, procesamiento distribuido, diseño de DAGs y monitoreo en Apache Airflow, datasets versionados y segregación de datos válidos/rechazados
+            - label: Bases de Datos & SQL
+              details: SQL avanzado para analítica, PostgreSQL, optimización de queries e indexación, análisis de execution plans, tablas particionadas y modelado para cargas analíticas
+            - label: Cloud & DevOps (AWS)
+              details: AWS Lambda, Amazon S3, IAM (principio de mínimo privilegio), CloudWatch (logs y monitoreo), EventBridge, ECR (containerización), Docker y CI/CD con GitHub Actions
+            - label: Calidad de Datos & Observabilidad
+              details: Validaciones basadas en reglas de negocio, testing automatizado con Pytest, logging estructurado, detección de fallos y segregación de registros inválidos para auditoría
+            - label: Idiomas
+              details: Español (Nativo) | Inglés (Fluido - C2)
 
-    experiencia:
-      - company: ETL de Reportes E-commerce (Proyecto Personal)
-        position: Ingeniero de Datos
-        location: '[GitHub](https://github.com/Gerardo1909/ecommerce-reporting-etl)'
-        start_date: 2025-11
-        end_date: 2025-12
-        highlights:
-          - Diseñé e implementé un pipeline ETL end-to-end en Python para un dataset de e-commerce (10+ tablas relacionadas), reduciendo el tiempo de reportes manuales de 2 horas a menos de 3 minutos.
-          - Definí y calculé métricas de negocio clave (mejores clientes, productos más vendidos, tendencias mensuales) para soportar la toma de decisiones basada en datos.
-          - Identifiqué y resolví problemas de calidad de datos, manejando ~15% de valores faltantes y eliminando ~3% de registros duplicados.
-          - Optimicé el almacenamiento de datos migrando outputs de CSV a Parquet, reduciendo el tamaño de archivos en 8x.
+        experiencia:
+            - company: Hotel Serverless Pipeline – AWS Data Architecture (Proyecto Personal)
+              position: Ingeniero de Datos
+              location: "[GitHub](https://github.com/Gerardo1909/hotel-serverless-pipeline)"
+              start_date: 2026-01
+              end_date: 2026-02
+              highlights:
+                  - Diseñé e implementé un pipeline de datos completamente serverless en AWS (S3 + Lambda + EventBridge).
+                  - Automatizé la detección de nuevos lotes en S3 y la ejecución de transformaciones mediante triggers event-driven.
+                  - Consolidé múltiples CSV en datasets particionados en Parquet (Hive-style) optimizados para Athena.
+                  - Implementé reglas de validación (precio, fechas, rangos de score) con segregación automática de datos rechazados.
+                  - Diseñé el sistema bajo principios de idempotencia (reintentos seguros, sin duplicación).
+                  - Configuré IAM con políticas de mínimo privilegio y monitoreo centralizado en CloudWatch.
 
-      - company: ETL para datos IoT (Proyecto Personal)
-        position: Ingeniero de Datos
-        location: '[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)'
-        start_date: 2025-12
-        end_date: present
-        highlights:
-          - Diseñé e implementé un pipeline ETL orquestado con Airflow para procesar millones de lecturas IoT industriales diariamente provenientes de una API externa, logrando 99.9% de uptime y detección de fallas en menos de 5 minutos.
-          - Implementé la etapa de transformación en PySpark, logrando procesar 50GB/minuto sin problemas de memoria.
-          - Implementé particionamiento y versionado de datos en Parquet, optimizando queries y reduciendo costos de almacenamiento.
-          - Diseñé esquema de almacenamiento en AWS S3 (data lake), asegurando potencial escalabilidad ante un mayor volumen de datos (> 1TB diario).
+            - company: ETL para datos IoT (Proyecto Personal)
+              position: Ingeniero de Datos
+              location: "[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)"
+              start_date: 2025-12
+              end_date: 2026-01
+              highlights:
+                  - Diseñé arquitectura tipo Medallion (Bronze → Silver → Gold) procesando millones de eventos IoT diarios.
+                  - Implementé transformaciones distribuidas en PySpark alcanzando ~50GB/min sin cuellos de memoria.
+                  - Arquitecté un Data Lake en Amazon S3 con particionamiento y versionado para soportar >1TB/día.
+                  - Definí controles de calidad y alertas de fallos logrando 99.9% de disponibilidad del pipeline.
+                  - Modelé capa analítica dimensional (Star Schema) lista para consumo BI.
 
-    educación:
-      - institution: Universidad Nacional de San Martín (UNSAM)
-        area: Ciencia de Datos
-        degree: Licenciatura
-        location: Buenos Aires, Argentina
-        start_date: 2022-07
-        end_date: present
-        highlights:
-          - '75% completado — Promedio: 9.0 / 10'
+        educación:
+            - institution: Universidad Nacional de San Martín (UNSAM)
+              area: Ciencia de Datos
+              degree: Licenciatura
+              location: Buenos Aires, Argentina
+              start_date: 2022-07
+              end_date: present
+              highlights:
+                  - "75% completado — Promedio: 9.0 / 10"
 
 design:
-  theme: engineeringresumes
-  page:
-    size: us-letter
-    top_margin: 0.5in
-    bottom_margin: 0.5in
-    left_margin: 0.5in
-    right_margin: 0.5in
-    show_footer: false
-    show_top_note: false
-  templates:
-    education_entry:
-      main_column: "**INSTITUTION**, DEGREE en AREA\nSUMMARY\nHIGHLIGHTS"
-      degree_column:
+    theme: engineeringresumes
+    page:
+        size: us-letter
+        top_margin: 0.5in
+        bottom_margin: 0.5in
+        left_margin: 0.5in
+        right_margin: 0.5in
+        show_footer: false
+        show_top_note: false
+    templates:
+        education_entry:
+            main_column: "**INSTITUTION**, DEGREE en AREA\nSUMMARY\nHIGHLIGHTS"
+            degree_column:
 
 settings:
-  render_command:
-    dont_generate_markdown: true
-    dont_generate_html: true
-    dont_generate_png: true
+    render_command:
+        dont_generate_markdown: true
+        dont_generate_html: true
+        dont_generate_png: true
 
 locale:
-  language: spanish
-  present: presente
+    language: spanish
+    present: presente
