@@ -29,7 +29,7 @@ cv:
         experience:
             - company: RAG Systems - Causalito AI Assistant (Personal Project)
               position: AI Backend Engineer
-              location: "[GitHub](https://github.com/Gerardo1909/fintech-flow-dbt)"
+              location: "[GitHub](https://github.com/Gerardo1909/causalito)"
               start_date: 2025-12
               end_date: 2026-02
               highlights:
@@ -42,7 +42,7 @@ cv:
 
             - company: Bayes Plurinacional
               position: Undergraduate Teaching Assistant
-              location: "[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)"
+              location: "[GitHub](https://github.com/BayesPlurinacional)"
               start_date: 2025-12
               end_date: present
               highlights:
