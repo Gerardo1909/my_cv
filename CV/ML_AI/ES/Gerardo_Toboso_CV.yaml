@@ -1,0 +1,87 @@
+cv:
+    name: Gerardo Toboso
+    headline: Ingeniero de Backend IA | Sistemas LLM e Infraestructura de Datos
+    location: Buenos Aires, Argentina
+    email: gerardotoboso1909@gmail.com
+    phone: (+54) 911-4045-6207
+    social_networks:
+        - network: LinkedIn
+          username: gerardo-toboso-512a48290
+        - network: GitHub
+          username: Gerardo1909
+
+    sections:
+        resumen:
+            - Ingeniero de Backend IA especializado en diseño e implementación de sistemas LLM listos para producción e infraestructuras de datos escalables. Amplia experiencia en arquitecturas RAG modulares, integración de APIs LLM, diseño de sistemas backend y ingeniería consciente de observabilidad. Asistente de Cátedra en Inferencia Bayesiana Causal con bases sólidas en modelado probabilístico y cuantificación de incertidumbre. Enfocado en construir servicios backend impulsados por IA robustos, testeables y mantenibles alineados con principios de arquitectura limpia.
+
+        habilidades:
+            - label: Desarrollo Backend & APIs
+              details: Python (avanzado), FastAPI (arquitectura lista para APIs), diseño RESTful, Inyección de Dependencias y principios de Arquitectura Limpia
+            - label: Sistemas LLM & IA
+              details: Arquitecturas RAG, integración de APIs LLM (Groq/compatibles con OpenAI), ingeniería de prompts con contextualización, bases de datos vectoriales (ChromaDB), pipelines de embeddings (Sentence Transformers) y estrategias de búsqueda por similitud y filtrado
+            - label: Infraestructura de Datos
+              details: SQL (DuckDB, modelado analítico), conceptos NoSQL, PySpark, orquestación con Airflow, dbt-core y AWS S3
+            - label: DevOps & Testing
+              details: Docker & Docker Compose, Pytest con cobertura, estructura de proyectos organizada y gestión de configuración de entornos
+            - label: Fundamentos de ML
+              details: Inferencia Bayesiana, modelado probabilístico, MCMC y modelos jerárquicos, y cuantificación de incertidumbre
+
+        experiencia:
+            - company: Sistemas RAG - Asistente IA Causalito (Proyecto Personal)
+              position: Ingeniero de Backend IA
+              location: "[GitHub](https://github.com/Gerardo1909/causalito)"
+              start_date: 2025-12
+              end_date: 2026-02
+              highlights:
+                  - Diseñé e implementé un sistema backend basado en RAG modular que indexa PDFs académicos y genera respuestas fundamentadas a través de APIs LLM.
+                  - Arquitecté un pipeline completo de ingesta → indexación → recuperación → generación con separación estricta de responsabilidades.
+                  - Integré APIs LLM externas (Groq/compatibles con OpenAI) con orquestación de prompts personalizada para reducir alucinaciones.
+                  - Implementé estrategia de IDs determinísticos para indexación reproducible y consistencia.
+                  - Desarrollé infraestructura de búsqueda por similitud usando embeddings vectoriales (Sentence Transformers + ChromaDB).
+                  - Construí suite de tests estructurada (unitarios + integración) con ~70–80% cobertura para módulos críticos.
+
+            - company: Bayes Plurinacional
+              position: Asistente de Cátedra Universitaria
+              location: "[GitHub](https://github.com/BayesPlurinacional)"
+              start_date: 2025-12
+              end_date: present
+              highlights:
+                  - Desarrollé documentación técnica y materiales de cátedra sobre modelado probabilístico, MCMC y modelos jerárquicos.
+                  - Traduje teoría Bayesiana avanzada en flujos de trabajo aplicados para cuantificación de incertidumbre.
+                  - Guié a estudiantes en comparación de modelos e interpretación de intervalos creíbles.
+                  - Simplifiqué sistemas probabilísticos complejos en conceptos de ingeniería accionables.
+
+        educación:
+            - institution: Universidad Nacional de San Martín (UNSAM)
+              area: Ciencia de Datos
+              degree: Licenciatura
+              location: Buenos Aires, Argentina
+              start_date: 2022-07
+              end_date: present
+              highlights:
+                  - "75% completado — Promedio: 9.0 / 10"
+
+design:
+    theme: engineeringresumes
+    page:
+        size: us-letter
+        top_margin: 0.5in
+        bottom_margin: 0.5in
+        left_margin: 0.5in
+        right_margin: 0.5in
+        show_footer: false
+        show_top_note: false
+    templates:
+        education_entry:
+            main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
+            degree_column:
+
+settings:
+    render_command:
+        dont_generate_markdown: true
+        dont_generate_html: true
+        dont_generate_png: true
+
+locale:
+    language: spanish
+    present: presente
