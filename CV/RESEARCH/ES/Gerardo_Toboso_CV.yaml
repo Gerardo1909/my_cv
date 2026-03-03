@@ -1,0 +1,89 @@
+cv:
+    name: Gerardo Toboso
+    headline: Machine Learning Research Engineer | Ciencia de Datos & Inferencia Bayesiana
+    location: Buenos Aires, Argentina
+    email: gerardotoboso1909@gmail.com
+    phone: (+54) 911-4045-6207
+    social_networks:
+        - network: LinkedIn
+          username: gerardo-toboso-512a48290
+        - network: GitHub
+          username: Gerardo1909
+
+    sections:
+        resumen:
+            - Estudiante avanzado de Ciencia de Datos (Promedio 9.0) con enfoque en el desarrollo de sistemas de aprendizaje automático y modelado estadístico riguroso. Especializado en la aplicación de métodos Bayesianos para la toma de decisiones bajo incertidumbre y procesamiento de lenguaje natural (NLP). Experiencia colaborando en proyectos de investigación internacional (MIT LIFT Lab) y en docencia universitaria. Capaz de cerrar la brecha entre la teoría estadística abstracta y la implementación técnica de alto rendimiento en Python.
+
+        habilidades:
+            - label: Modelado Estadístico & ML
+              details: Inferencia Bayesiana, Métodos MCMC, Modelos Jerárquicos, Cuantificación de Incertidumbre, Aprendizaje Supervisado.
+            - label: NLP & Investigación
+              details: Análisis de sentimientos, Modelado de tópicos, Métricas de consistencia textual, Análisis exploratorio de datos (EDA) para investigación.
+            - label: Ingeniería de Software para Ciencia
+              details: Python (NumPy, Pandas, PyMC, Scikit-learn), Arquitecturas de datos reproducibles, SQL, Git (Flujos colaborativos).
+
+        experiencia:
+            - company: MIT LIFT Lab & UNSAM
+              position: Colaborador de Investigación (Proyecto Internacional)
+              location: "[GitHub](https://github.com/Gerardo1909/mit_lift_lab_analisis_adelift)"
+              start_date: 2025-09
+              end_date: present
+              highlights:
+                  - Modelé expectativas comerciales en 900+ micro-comercios ante shocks macroeconómicos, utilizando técnicas de NLP para extraer señales de comportamiento bajo incertidumbre.
+                  - Diseñé y operacionalicé una métrica original de 'consistencia' para evaluar la divergencia entre expectativas subjetivas y desempeño objetivo.
+                  - Sinteticé hallazgos técnicos en reportes de nivel académico para audiencias interdisciplinarias del MIT y UNSAM.
+
+            - company: Universidad Nacional de San Martín (UNSAM)
+              position: Colaborador Docente (Inferencia Bayesiana)
+              location: "[GitHub](https://github.com/MetodosBayesianos)"
+              start_date: 2025-12
+              end_date: present
+              highlights:
+                  - Desarrollo de materiales pedagógicos sobre modelado probabilístico avanzado, incluyendo MCMC y muestreadores de Gibbs.
+                  - Investigación aplicada en la interpretación de distribuciones a priori y a posteriori para problemas de decisión real.
+                  - Simplificación de conceptos complejos de teoría de probabilidad para su implementación práctica en entornos de ingeniería.
+
+            - company: Freelance / Proyectos Estratégicos
+              position: Desarrollador Backend IA (Enfoque en Sistemas)
+              location: "[GitHub](https://github.com/Gerardo1909/causalito)"
+              start_date: 2024-01
+              end_date: present
+              highlights:
+                  - Diseñé sistemas de procesamiento de datos para modelos de lenguaje (LLM), optimizando la recuperación de información mediante arquitecturas modulares.
+                  - Implementé pipelines de datos que garantizan la trazabilidad y reproducibilidad de los resultados, fundamentales para el entorno de investigación.
+
+        educación:
+            - institution: Universidad Nacional de San Martín (UNSAM)
+              area: Licenciatura en Ciencia de Datos
+              degree: Estudiante Avanzado
+              location: Buenos Aires, Argentina
+              start_date: 2022-07
+              end_date: present
+              highlights:
+                  - "75% completado — Promedio: 9.0 / 10"
+                  - "Foco en: Estadística Matemática, Algoritmos, y Sistemas Distribuidos."
+
+design:
+    theme: engineeringresumes
+    page:
+        size: us-letter
+        top_margin: 0.5in
+        bottom_margin: 0.5in
+        left_margin: 0.5in
+        right_margin: 0.5in
+        show_footer: false
+        show_top_note: false
+    templates:
+        education_entry:
+            main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
+            degree_column:
+
+settings:
+    render_command:
+        dont_generate_markdown: true
+        dont_generate_html: true
+        dont_generate_png: true
+
+locale:
+    language: spanish
+    present: presente
