@@ -1,6 +1,6 @@
 cv:
     name: Gerardo Toboso
-    headline: Data Engineer
+    headline: Data & Cloud Engineer | AWS Serverless Architect | Cost-Optimized Systems
     location: Buenos Aires, Argentina
     email: gerardotoboso1909@gmail.com
     phone: (+54) 911-4045-6207
@@ -12,45 +12,37 @@ cv:
 
     sections:
         summary:
-            - Data Engineer specialized in designing scalable data platforms and production-grade pipelines following modern data architecture principles. Experienced in Medallion Architecture (Bronze/Silver/Gold), dimensional modeling, distributed processing, and data quality frameworks. Strong focus on idempotent pipeline design, observability, cost-efficient storage strategies, and business-aligned data modeling. Currently expanding expertise into Azure-native data services and cloud platform optimization.
+            - Data & Cloud Engineer focused on AWS serverless systems, event-driven architectures, and data pipelines. Recently led a fintech mortgage platform initiative that cut 22M redundant calls per week, redacted sensitive data from 71M historical records, and delivered sub-2s real-time updates through WebSockets and DynamoDB Streams.
 
         skills:
-            - label: Data Architecture & Platform Design
-              details: Medallion Architecture (Bronze/Silver/Gold), Dimensional Modeling (Star Schema, SCD Type 2), Idempotent pipeline design, Data Contracts, Partitioning & Storage Optimization (Parquet), Cost-aware Data Lake design, and Data SLAs & Freshness Policies
-            - label: Data Engineering & Processing
-              details: Python (pandas, PySpark, duckdb), Apache Airflow (DAG design, retries, alerting, monitoring), Distributed processing (~50GB/min throughput), ETL/ELT pipeline development, and Versioned datasets
-            - label: Databases & Query Optimization
-              details: PostgreSQL, Query optimization & indexing strategies, Execution plan analysis, Partitioned tables, and Advanced SQL for analytics workloads
-            - label: Cloud & DevOps
-              details: AWS S3 (Data Lake architecture), Docker, CI/CD (GitHub Actions), Infrastructure reproducibility, Monitoring & structured logging, and exploring Azure Data Factory & Azure SQL
-            - label: Data Quality & Observability
-              details: Great Expectations, Automated pipeline testing (Pytest), Data lineage via dbt, Alerting & failure detection, and Freshness checks
+            - label: Cloud Architecture & Serverless Systems
+              details: AWS Lambda, DynamoDB, SQS, API Gateway, WebSockets, Event-Driven design, IAM, and cost optimization
+            - label: Data Engineering, SQL & Processing
+              details: Python (pandas, PySpark, duckdb), PostgreSQL, ETL/ELT pipeline development, Airflow, idempotent design, Parquet partitioning, and data contracts
+            - label: Reliability & Observability
+              details: CloudWatch, structured logging, alerting, automated testing (Pytest), freshness checks, and failure detection
 
         experience:
-            - company: Analytics Engineering – Fintech Data Platform (dbt) (Personal Project)
+            - company: Stealth Fintech (US-based Mortgage Platform)
+              position: Fullstack Software Engineer | Cloud & Serverless Architect
+              location: Freelance · Buenos Aires Province, Argentina · Remote
+              start_date: 2026-01
+              end_date: present
+              highlights:
+                  - Cut 22M redundant backend calls per week by fixing a high-frequency polling inefficiency and reducing AWS Lambda and DynamoDB cost.
+                  - Led a security audit to redact OAuth and API key credentials from 71M historical records in DynamoDB and S3, then added automated redaction in the communication wrapper.
+                  - Migrated a polling-based frontend to an event-driven architecture using API Gateway WebSockets and DynamoDB Streams, enabling sub-2s updates for critical loan state changes.
+                  - Built and maintained a mortgage pipeline orchestrating 50+ AWS Lambdas and 30+ external APIs, reducing loan closing times from 30 days to under 7 and serving 200+ clients with 99.9% availability.
+
+            - company: Hotel Serverless Pipeline – AWS Data Architecture (Personal Project)
               position: Data Engineer
-              location: "[GitHub](https://github.com/Gerardo1909/fintech-flow-dbt)"
+              location: "[GitHub](https://github.com/Gerardo1909/hotel-serverless-pipeline)"
               start_date: 2026-01
               end_date: 2026-02
               highlights:
-                  - Migrated 25+ fragmented SQL transformations into a structured dbt-based transformation layer.
-                  - Implemented SCD Type 2 dimensions to preserve historical customer and investment data.
-                  - Established automated data tests (unique, not_null, accepted_values) reducing production bugs by 80%.
-                  - Introduced documentation-first approach using dbt Docs, reducing onboarding time from 2 weeks to 2 days.
-                  - Modeled analytics-ready marts following scalable ELT best practices.
-
-            - company: IoT Data ETL (Personal Project)
-              position: Data Engineer
-              location: "[GitHub](https://github.com/Gerardo1909/iot-etl-pipeline)"
-              start_date: 2025-12
-              end_date: 2026-01
-              highlights:
-                  - Designed a Medallion-based architecture (Bronze → Silver → Gold) processing millions of industrial IoT events daily.
-                  - Built distributed transformations in PySpark achieving ~50GB/min throughput with no memory bottlenecks.
-                  - Implemented Parquet partitioning and dataset versioning to optimize query performance and reduce storage costs.
-                  - Defined data quality checks and failure alerting ensuring 99.9% pipeline uptime.
-                  - Architected AWS S3 data lake to support >1TB/day scalability.
-                  - Designed dimensional analytics layer enabling BI-ready star schema models.
+                  - Built a fully serverless AWS pipeline with Python Lambda functions, S3 event detection, EventBridge, and Lambda container images for heavy dependencies.
+                  - Encoded business rules and validation logic to branch processing by event type, reject invalid records early, and keep runs idempotent.
+                  - Consolidated CSV inputs into Parquet and Athena-ready datasets with CloudWatch logging and least-privilege IAM controls.
 
         education:
             - institution: Universidad Nacional de San Martín (UNSAM)
