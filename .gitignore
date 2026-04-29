@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Typescript stuff
+*.typ
