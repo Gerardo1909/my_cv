@@ -1,83 +1,78 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
 cv:
-    name: Gerardo Toboso
-    headline: Ingeniero de Datos y Cloud | Arquitecto Serverless AWS | Sistemas Costo-Eficientes
-    location: Buenos Aires, Argentina
-    email: gerardotoboso1909@gmail.com
-    phone: (+54) 911-4045-6207
-    social_networks:
-        - network: LinkedIn
-          username: gerardo-toboso-512a48290
-        - network: GitHub
-          username: Gerardo1909
+  name: Gerardo Toboso
+  headline: Ingeniero de Datos y Cloud | Arquitecto Serverless AWS | Sistemas Costo-Eficientes
+  location: Buenos Aires, Argentina
+  email: gerardotoboso1909@gmail.com
+  phone: (+54) 911-4045-6207
+  social_networks:
+    - network: LinkedIn
+      username: gerardo-toboso-512a48290
+    - network: GitHub
+      username: Gerardo1909
 
-    sections:
-        resumen:
-            - Ingeniero de Datos y Cloud enfocado en sistemas serverless sobre AWS, arquitecturas event-driven y pipelines productivos. En una plataforma hipotecaria fintech reduje 22M de llamadas redundantes por semana, redacté credenciales sensibles en 71M de registros históricos y habilité actualizaciones en tiempo real sub-2s con WebSockets y DynamoDB Streams.
+  sections:
+    resumen:
+      - Ingeniero de Datos y Cloud que construye sistemas serverless en AWS y diagnostica fallos a escala. En una fintech hipotecaria en EE. UU reduje 22M de llamadas redundantes por semana, aseguré 71M de registros y audité 268 incidentes de producción en 12 integraciones, identificando 27 causas raíz e implementando fixes que eliminaron más de 160 intervenciones manuales por parte del equipo cada mes.
 
-        habilidades:
-            - label: Arquitectura Cloud & Serverless
-              details: AWS Lambda, DynamoDB, SQS, API Gateway, WebSockets, diseño event-driven, IAM y optimización de costos
-            - label: Ingeniería de Datos, SQL & Procesamiento
-              details: Python (pandas, PySpark, duckdb), PostgreSQL, desarrollo de ETL/ELT, Airflow, diseño idempotente, particionamiento Parquet y data contracts
-            - label: Confiabilidad & Observabilidad
-              details: CloudWatch, logging estructurado, alertas, testing automatizado con Pytest, freshness checks y detección de fallos
-            - label: Idiomas
-              details: Español (Nativo) | Inglés (Fluido - C2)
+    habilidades:
+      - label: Arquitectura Cloud & Serverless
+        details: AWS Lambda, DynamoDB, SQS, API Gateway, WebSockets, diseño event-driven, IAM y optimización de costos
+      - label: Ingeniería de Datos, SQL & Procesamiento
+        details: Python (pandas, PySpark, duckdb), PostgreSQL, desarrollo de ETL/ELT, Airflow, diseño idempotente, particionamiento Parquet y data contracts
+      - label: Confiabilidad & Observabilidad
+        details: CloudWatch, logging estructurado, alertas, testing automatizado con Pytest, freshness checks y detección de fallos
+      - label: Idiomas
+        details: Español (Nativo) | Inglés (Fluido - C2)
 
-        experiencia:
-            - company: Stealth Fintech (Plataforma hipotecaria en EE. UU.)
-              position: Ingeniero de Software Fullstack | Arquitecto Cloud & Serverless
-              location: Freelance · Buenos Aires Province, Argentina · Remoto
-              start_date: 2026-01
-              end_date: present
-              highlights:
-                  - Reduje 22M de llamadas redundantes por semana corrigiendo una ineficiencia de polling de alta frecuencia y bajando el costo de AWS Lambda y DynamoDB.
-                  - Lideré una auditoría de seguridad para redactar credenciales OAuth y API Keys de 71M de registros históricos en DynamoDB y S3, y luego añadí redacción automática en el wrapper de comunicación.
-                  - Migré una interfaz basada en polling a una arquitectura event-driven con API Gateway WebSockets y DynamoDB Streams, logrando actualizaciones sub-2s para cambios críticos de estado.
-                  - Construí y mantuve un pipeline hipotecario que orquesta 50+ AWS Lambdas y 30+ APIs externas, reduciendo el cierre de préstamos de 30 días a menos de 7 y sirviendo a 200+ clientes con 99.9% de disponibilidad.
+    experiencia:
+      - company: Stealth Fintech (Plataforma hipotecaria en EE. UU.)
+        position: Ingeniero de Software Fullstack | Arquitecto Cloud & Serverless
+        location: Contrato · Buenos Aires Province, Argentina · Remoto
+        start_date: 2024-01
+        end_date: present
+        highlights:
+          - Reduje 22M de llamadas redundantes por semana corrigiendo una ineficiencia de polling de alta frecuencia y bajando el costo de AWS Lambda y DynamoDB.
+          - Lideré una auditoría de seguridad para redactar credenciales OAuth y API Keys de 71M de registros históricos en DynamoDB y S3, y luego añadí redacción automática en el wrapper de comunicación.
+          - Migré una interfaz basada en polling a una arquitectura event-driven con API Gateway WebSockets y DynamoDB Streams, logrando actualizaciones sub-2s para cambios críticos de estado.
+          - Construí y mantuve un pipeline hipotecario que orquesta 50+ AWS Lambdas y 30+ APIs externas, reduciendo el cierre de préstamos de 30 días a menos de 7 y sirviendo a 200+ clientes con 99.9% de disponibilidad.
+          - Realicé una auditoría estructurada de causas raíz sobre 268 incidentes de producción en 12 integraciones de terceros (Plaid, Docutech, Persona, Service Link) en 8,5 semanas, identifiqué 27 patrones de fallo y apliqué fixes que eliminaron más de 160 escalaciones manuales de soporte por ciclo.
+          - Resolví un defecto crítico de validación de ingresos en Plaid reemplazando la comparación exacta de cadenas por normalización Unicode y similitud Jaro-Winkler, eliminando 57 tickets de soporte por ciclo, la clase de fallo más frecuente de la plataforma, sin necesidad de intervención manual tras el fix.
+          - Implementé clasificación estructurada de errores y retry con backoff exponencial en la integración con Docutech, distinguiendo fallos de autenticación, errores de payload y caídas del servicio, convirtiendo 35 fallos opacos recurrentes por ciclo en incidentes auto-diagnosticables y auto-recuperables.
+          - Corregí un defecto en la verificación de identidad con Persona que trataba timeouts transitorios de la API (estado canceled) como fallos reales de identidad, generando 22 rechazos falsos por ciclo; implementé auto-retry para estados canceled y normalización Unicode en campos de nombre antes del envío, eliminando todos los rechazos falsos.
+          - Resolví una race condition en el flujo de órdenes de Service Link donde timeouts de Lambda entre la creación en la API y la persistencia en DynamoDB borraban permanentemente los IDs de orden, reemplacé dobles escrituras con transacciones DynamoDB y retry con SQS, eliminando fallos en cascada en 3 handlers de webhook downstream.
 
-            - company: Hotel Serverless Pipeline – AWS Data Architecture (Proyecto Personal)
-              position: Ingeniero de Datos
-              location: "[GitHub](https://github.com/Gerardo1909/hotel-serverless-pipeline)"
-              start_date: 2026-01
-              end_date: 2026-02
-              highlights:
-                  - Construí un pipeline serverless en AWS con funciones Lambda en Python, detección de eventos en S3, EventBridge e imágenes de contenedor para dependencias pesadas.
-                  - Codifiqué lógica de negocio y validación para enrutar el procesamiento según el evento, rechazar registros inválidos temprano y mantener idempotencia.
-                  - Consolidé CSV en datasets Parquet listos para Athena con logging en CloudWatch y controles IAM de mínimo privilegio.
-
-        educación:
-            - institution: Universidad Nacional de San Martín (UNSAM)
-              area: Ciencia de Datos
-              degree: Licenciatura
-              location: Buenos Aires, Argentina
-              start_date: 2022-07
-              end_date: present
-              highlights:
-                  - "75% completado — Promedio: 9.0 / 10"
+    educación:
+      - institution: Universidad Nacional de San Martín (UNSAM)
+        area: Ciencia de Datos
+        degree: Licenciatura
+        location: Buenos Aires, Argentina
+        start_date: 2022-07
+        end_date: present
+        highlights:
+          - "75% completado — Promedio: 9.0 / 10"
 
 design:
-    theme: engineeringresumes
-    page:
-        size: us-letter
-        top_margin: 0.5in
-        bottom_margin: 0.5in
-        left_margin: 0.5in
-        right_margin: 0.5in
-        show_footer: false
-        show_top_note: false
-    templates:
-        education_entry:
-            main_column: "**INSTITUTION**, DEGREE en AREA\nSUMMARY\nHIGHLIGHTS"
-            degree_column:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.5in
+    right_margin: 0.5in
+    show_footer: false
+    show_top_note: false
+  templates:
+    education_entry:
+      main_column: "**INSTITUTION**, DEGREE en AREA\nSUMMARY\nHIGHLIGHTS"
+      degree_column:
 
 settings:
-    render_command:
-        dont_generate_markdown: true
-        dont_generate_html: true
-        dont_generate_png: true
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
 
 locale:
-    language: spanish
-    present: presente
+  language: spanish
+  present: presente
