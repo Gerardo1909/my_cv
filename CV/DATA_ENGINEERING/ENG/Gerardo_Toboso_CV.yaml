@@ -1,80 +1,75 @@
 cv:
-    name: Gerardo Toboso
-    headline: Data & Cloud Engineer | AWS Serverless Architect | Cost-Optimized Systems
-    location: Buenos Aires, Argentina
-    email: gerardotoboso1909@gmail.com
-    phone: (+54) 911-4045-6207
-    social_networks:
-        - network: LinkedIn
-          username: gerardo-toboso-512a48290
-        - network: GitHub
-          username: Gerardo1909
+  name: Gerardo Toboso
+  headline: Data & Cloud Engineer | AWS Serverless Architect | Cost-Optimized Systems
+  location: Buenos Aires, Argentina
+  email: gerardotoboso1909@gmail.com
+  phone: (+54) 911-4045-6207
+  social_networks:
+    - network: LinkedIn
+      username: gerardo-toboso-512a48290
+    - network: GitHub
+      username: Gerardo1909
 
-    sections:
-        summary:
-            - Data & Cloud Engineer focused on AWS serverless systems, event-driven architectures, and data pipelines. Recently led a fintech mortgage platform initiative that cut 22M redundant calls per week, redacted sensitive data from 71M historical records, and delivered sub-2s real-time updates through WebSockets and DynamoDB Streams.
+  sections:
+    summary:
+      - Data & Cloud Engineer who builds production-grade AWS serverless systems and diagnoses failure at scale. At a US mortgage fintech I cut 22M backend calls/week, secured 71M records, and audited 268 production incidents across 12 integrations, identifying 27 systemic root causes and implementing fixes that eliminated 160+ support escalations per cycle.
 
-        skills:
-            - label: Cloud Architecture & Serverless Systems
-              details: AWS Lambda, DynamoDB, SQS, API Gateway, WebSockets, Event-Driven design, IAM, and cost optimization
-            - label: Data Engineering, SQL & Processing
-              details: Python (pandas, PySpark, duckdb), PostgreSQL, ETL/ELT pipeline development, Airflow, idempotent design, Parquet partitioning, and data contracts
-            - label: Reliability & Observability
-              details: CloudWatch, structured logging, alerting, automated testing (Pytest), freshness checks, and failure detection
+    skills:
+      - label: Cloud Architecture & Serverless Systems
+        details: AWS Lambda, DynamoDB, SQS, API Gateway, WebSockets, Event-Driven design, IAM, and cost optimization
+      - label: Data Engineering, SQL & Processing
+        details: Python (pandas, PySpark, duckdb), PostgreSQL, ETL/ELT pipeline development, Airflow, idempotent design, Parquet partitioning, and data contracts
+      - label: Reliability & Observability
+        details: CloudWatch, structured logging, alerting, automated testing (Pytest), freshness checks, and failure detection
 
-        experience:
-            - company: Stealth Fintech (US-based Mortgage Platform)
-              position: Fullstack Software Engineer | Cloud & Serverless Architect
-              location: Freelance · Buenos Aires Province, Argentina · Remote
-              start_date: 2026-01
-              end_date: present
-              highlights:
-                  - Cut 22M redundant backend calls per week by fixing a high-frequency polling inefficiency and reducing AWS Lambda and DynamoDB cost.
-                  - Led a security audit to redact OAuth and API key credentials from 71M historical records in DynamoDB and S3, then added automated redaction in the communication wrapper.
-                  - Migrated a polling-based frontend to an event-driven architecture using API Gateway WebSockets and DynamoDB Streams, enabling sub-2s updates for critical loan state changes.
-                  - Built and maintained a mortgage pipeline orchestrating 50+ AWS Lambdas and 30+ external APIs, reducing loan closing times from 30 days to under 7 and serving 200+ clients with 99.9% availability.
+    experience:
+      - company: Stealth Fintech (US-based Mortgage Platform)
+        position: Fullstack Software Engineer | Cloud & Serverless Architect
+        location: Contractor · Buenos Aires Province, Argentina · Remote
+        start_date: 2024-01
+        end_date: present
+        highlights:
+          - Cut 22M redundant backend calls per week by fixing a high-frequency polling inefficiency and reducing AWS Lambda and DynamoDB cost.
+          - Led a security audit to redact OAuth and API key credentials from 71M historical records in DynamoDB and S3, then added automated redaction in the communication wrapper.
+          - Migrated a polling-based frontend to an event-driven architecture using API Gateway WebSockets and DynamoDB Streams, enabling sub-2s updates for critical loan state changes.
+          - Built and maintained a mortgage pipeline orchestrating 50+ AWS Lambdas and 30+ external APIs, reducing loan closing times from 30 days to under 7 and serving 200+ clients with 99.9% availability.
+          - Conducted a structured root-cause audit of 268 production incidents across 12 third-party integrations (Plaid, Docutech, Persona, Service Link) over 8.5 weeks, identified 27 distinct failure patterns, and implemented targeted fixes that eliminated over 160 manual support escalations per 8-week cycle.
+          - Resolved a critical Plaid income-validation defect by replacing exact string matching with Unicode normalization and Jaro-Winkler fuzzy matching, eliminating 57 support tickets per cycle, the highest-frequency failure class on the platform, with zero manual ops intervention required after the fix.
+          - Implemented structured error classification and exponential backoff retry for the Docutech document-generation integration, distinguishing auth failures, payload errors, and service outages, converting 35 recurring opaque API failures per cycle into self-diagnosable, auto-recoverable incidents.
+          - Fixed a Persona identity-verification defect that treated transient API timeouts (canceled status) as genuine identity failures, generating 22 false rejections per cycle; implemented auto-retry for canceled checks and Unicode normalization on name fields, eliminating all false rejections.
+          - Resolved a race condition in the Service Link title-order flow where Lambda timeouts between API creation and DynamoDB persistence permanently lost order IDs, replaced dual writes with DynamoDB transactions and SQS-backed retry, eliminating cascading failures across 3 downstream webhook handlers.
 
-            - company: Hotel Serverless Pipeline – AWS Data Architecture (Personal Project)
-              position: Data Engineer
-              location: "[GitHub](https://github.com/Gerardo1909/hotel-serverless-pipeline)"
-              start_date: 2026-01
-              end_date: 2026-02
-              highlights:
-                  - Built a fully serverless AWS pipeline with Python Lambda functions, S3 event detection, EventBridge, and Lambda container images for heavy dependencies.
-                  - Encoded business rules and validation logic to branch processing by event type, reject invalid records early, and keep runs idempotent.
-                  - Consolidated CSV inputs into Parquet and Athena-ready datasets with CloudWatch logging and least-privilege IAM controls.
-
-        education:
-            - institution: Universidad Nacional de San Martín (UNSAM)
-              area: Data Science
-              degree: BSc
-              location: Buenos Aires, Argentina
-              start_date: 2022-07
-              end_date: present
-              highlights:
-                  - "75% completed — GPA: 9.0 / 10"
+    education:
+      - institution: Universidad Nacional de San Martín (UNSAM)
+        area: Data Science
+        degree: BSc
+        location: Buenos Aires, Argentina
+        start_date: 2022-07
+        end_date: present
+        highlights:
+          - "75% completed — GPA: 9.0 / 10"
 
 design:
-    theme: engineeringresumes
-    page:
-        size: us-letter
-        top_margin: 0.5in
-        bottom_margin: 0.5in
-        left_margin: 0.5in
-        right_margin: 0.5in
-        show_footer: false
-        show_top_note: false
-    templates:
-        education_entry:
-            main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
-            degree_column:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.5in
+    right_margin: 0.5in
+    show_footer: false
+    show_top_note: false
+  templates:
+    education_entry:
+      main_column: "**INSTITUTION**, DEGREE in AREA\nSUMMARY\nHIGHLIGHTS"
+      degree_column:
 
 settings:
-    render_command:
-        dont_generate_markdown: true
-        dont_generate_html: true
-        dont_generate_png: true
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
 
 locale:
-    language: english
-    present: present
+  language: english
+  present: present
