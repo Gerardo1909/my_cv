@@ -23,7 +23,7 @@ cv:
         details: CloudWatch, structured logging, alerting, automated testing (Pytest), freshness checks, and failure detection
 
     experience:
-      - company: Stealth Fintech (US-based Mortgage Platform)
+      - company: Figure (US-based Mortgage Platform)
         position: Fullstack Software Engineer | Cloud & Serverless Architect
         location: Contractor · Buenos Aires Province, Argentina · Remote
         start_date: 2024-01
