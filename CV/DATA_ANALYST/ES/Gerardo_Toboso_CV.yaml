@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+cv:
+  name: Gerardo Toboso
+  headline: Analista de Datos | SQL · Python · Visualización | Ciencia de Datos & Toma de Decisiones
+  location: Buenos Aires, Argentina
+  email: gerardotoboso1909@gmail.com
+  phone: (+54) 911-4045-6207
+  social_networks:
+    - network: LinkedIn
+      username: gerardo-toboso-512a48290
+    - network: GitHub
+      username: Gerardo1909
+
+  sections:
+    resumen:
+      - Estudiante avanzado de Ciencia de Datos (promedio 9.0/10) con experiencia analizando datos a escala en una fintech de EE. UU. Identifiqué patrones en +268 incidentes de producción y analicé datos de +900 micro-comercios con el MIT. Orientado a organizar, estructurar y analizar información de múltiples fuentes para la toma de decisiones basada en datos.
+
+    habilidades:
+      - label: Análisis & Consultas de Datos
+        details: SQL (PostgreSQL, DuckDB), Python (pandas, NumPy), limpieza de datos, análisis exploratorio (EDA) y modelado analítico
+      - label: Visualización & Reportes
+        details: Power BI, Looker Studio, Google Sheets (avanzado), dashboards interactivos, storytelling con datos y documentación de procesos
+      - label: Herramientas de Datos & CRM
+        details: Supabase, Airtable, Excel (avanzado), HubSpot, bases de datos relacionales y NoSQL (DynamoDB, S3)
+      - label: Estadística & Modelado
+        details: Inferencia Bayesiana, modelado probabilístico, cuantificación de incertidumbre, NLP y análisis de sentimientos
+      - label: Idiomas
+        details: Español (Nativo) | Inglés (Fluido - C2)
+
+    experiencia:
+      - company: Figure (Fintech hipotecaria en EE. UU.)
+        position: Analista de Datos & Calidad | Soporte de Decisiones
+        location: Contrato · Buenos Aires, Argentina · Remoto
+        start_date: 2024-01
+        end_date: present
+        highlights:
+          - Analicé 268 incidentes de producción en 12 integraciones externas (Plaid, Docutech, Persona, Service Link), identifiqué 27 patrones de fallo recurrentes y documenté causas raíz que eliminaron +160 escalaciones manuales de soporte por ciclo.
+          - Estructuré y organicé datos de +71M de registros históricos en DynamoDB y S3 como parte de una auditoría de seguridad y calidad de datos.
+          - Identifiqué una ineficiencia de consultas redundantes mediante análisis de logs, reduciendo 22M de llamadas innecesarias por semana y optimizando costos operativos.
+          - Documenté procesos y flujos de datos en un sistema que conecta +50 servicios y +30 APIs externas, sirviendo a +200 clientes.
+          - Diseñé métricas de validación de datos (normalización Unicode, similitud Jaro-Winkler) que eliminaron 57 tickets de soporte por ciclo.
+
+      - company: MIT LIFT Lab & UNSAM
+        position: Analista de Datos | Colaborador de Investigación
+        location: "[GitHub](https://github.com/Gerardo1909/mit_lift_lab_analisis_adelift)"
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - Analicé datos de +900 micro-comercios para modelar expectativas comerciales ante shocks macroeconómicos, aplicando técnicas de NLP para identificar patrones en datos textuales.
+          - Diseñé una métrica original de consistencia para evaluar la divergencia entre expectativas subjetivas y desempeño objetivo.
+          - Sinteticé hallazgos en reportes analíticos para audiencias interdisciplinarias del MIT y UNSAM.
+
+      - company: Universidad Nacional de San Martín (UNSAM)
+        position: Asistente de Cátedra | Inferencia Bayesiana
+        location: "[GitHub](https://github.com/BayesPlurinacional)"
+        start_date: 2025-12
+        end_date: present
+        highlights:
+          - Desarrollé documentación técnica y materiales sobre modelado probabilístico, MCMC y cuantificación de incertidumbre.
+          - Traduje análisis estadísticos complejos en conceptos accionables para la toma de decisiones.
+
+    educación:
+      - institution: Universidad Nacional de San Martín (UNSAM)
+        area: Ciencia de Datos
+        degree: Licenciatura
+        location: Buenos Aires, Argentina
+        start_date: 2022-07
+        end_date: present
+        highlights:
+          - "75% completado — Promedio: 9.0 / 10 — Foco en: Estadística, Algoritmos, Análisis de Datos y Modelado Probabilístico."
+
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.4in
+    bottom_margin: 0.25in
+    left_margin: 0.5in
+    right_margin: 0.5in
+    show_footer: false
+    show_top_note: false
+  templates:
+    education_entry:
+      main_column: "**INSTITUTION**, DEGREE en AREA\nSUMMARY\nHIGHLIGHTS"
+      degree_column:
+
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+
+locale:
+  language: spanish
+  present: presente
